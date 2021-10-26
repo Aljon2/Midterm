@@ -1,0 +1,17 @@
+h1{
+    font-size: 40px;
+    font-family: Verdana;
+    color: white;
+}
+
+.home{
+    margin-left: 150px;
+    margin-top: 150px;
+    background-color: rgba(134, 134, 134, 0.11);
+    width: 500px;
+    padding-left: 25px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    color: white;
+    
+}
