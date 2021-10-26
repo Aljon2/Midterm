@@ -1,0 +1,44 @@
+<body>
+  <mat-toolbar>
+      <mat-icon>
+          menu
+      </mat-icon>   
+      {{currentNav}}    
+  
+      <h1>ANGULAR PROJECT</h1>
+  </mat-toolbar>
+  
+  <mat-sidenav-container>
+      <mat-sidenav mode="side" opened>
+  
+          <img class="avatar mat-elevation-z8" src="https://scontent.fceb1-3.fna.fbcdn.net/v/t1.6435-9/181616097_2889115481304212_8422874761203489930_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=174925&_nc_eui2=AeGrH2IJ7AZr5U4bcXwPK-YDfw6e-C_tVEV_Dp74L-1URZJtPVpexSOFwA8JQDrJCH_3Ye1xxap8swAggwv0MFez&_nc_ohc=P9mT4V_I9z8AX9Afdso&_nc_ht=scontent.fceb1-3.fna&oh=4be60b6286e228fea73c923e4c69f216&oe=619C7015">
+          <h4 class="name">Aljon S. Sapilan</h4>
+  
+          <mat-divider></mat-divider>
+  
+          <mat-list class="list">
+              <mat-list-item> 
+                  <mat-icon class="icon">home</mat-icon> 
+                  <a routerLink="home" (click)="navClick('Home')" routerLinkActive="active" class="anchor_class">Home</a>
+              </mat-list-item>
+              
+              <mat-list-item> 
+                  <mat-icon class="icon">person</mat-icon> 
+                  <a routerLink="profile" (click)="navClick('Profile')" routerLinkActive="active" class="anchor_class">Profile</a>
+              </mat-list-item>
+              <mat-list-item>
+                  <mat-icon class="icon">image</mat-icon>
+                  <a routerLink="gallery" (click)="navClick('Gallery')" routerLinkActive="active" class="anchor_class">Gallery</a> 
+              </mat-list-item>
+              <mat-list-item> 
+                  <mat-icon class="icon">phone</mat-icon> 
+                  <a routerLink="contact" (click)="navClick('Contact')" routerLinkActive="active" class="anchor_class">Contact</a>
+              </mat-list-item>
+          </mat-list>
+      </mat-sidenav>
+      <mat-sidenav-content class="content">
+      <router-outlet></router-outlet>
+      </mat-sidenav-content>
+      
+  </mat-sidenav-container>
+  </body>
